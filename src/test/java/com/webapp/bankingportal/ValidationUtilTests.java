@@ -83,7 +83,7 @@ public class ValidationUtilTests extends BaseTest {
 
     @Test
     public void test_validate_password_with_valid_password() {
-        Assertions.assertDoesNotThrow(() -> ValidationUtil.validatePassword("Valid1@Pass"));
+        Assertions.assertDoesNotThrow(() -> ValidationUtil.validatePassword(getRandomPassword()));
     }
 
     @Test
